@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Inria-L';
+    src: url(../../Assets/Inria_Sans/InriaSans-Light.ttf);
+}
+@font-face {
+    font-family: 'Inria-M';
+    src: url(../../Assets/Inria_Sans/InriaSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inria-B';
+    src: url(../../Assets/Inria_Sans/InriaSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../../Assets/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+/* global */
+
+:root {
+    --WhiteF: #fff;
+    --AccentBlue: #003049;
+}
+
+* {
+    font-family: 'Inria-M';
+    background-color: var(--WhiteF);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* left-part */
+.left-part {
+    height: 100vh;
+    width: 50vw;
+}
+
+/* logo */
+.left-part #logo {
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* title */
+.left-part span {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+.left-part span #bar {
+    height: 42px;
+    width: 6px;
+    background-color: var(--AccentBlue);
+}
+
+.left-part span h1 {
+    font-family: 'Inria-B';
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--AccentBlue);
+    margin-left: 15px;
+}
+
+.left-part h3 {
+    font-family: 'Inria-L';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    color: var(--AccentBlue);
+    margin-left: 58px;
+    margin-top: 5px;
+}
+
+/* form */
+.left-part .form {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.left-part .form div {
+    position: relative;
+}
+
+/* form buttons */
+.left-part .buttons-container {
+    width: 400px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.domain-button {
+    width: fit-content;
+    height: 45px;
+    border-radius: 10px;
+    border: 2.5px solid var(--AccentBlue);
+    font-family: 'Inria-M';
+    font-size: 19px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.4s ease;
+}
+.selected {
+    width: fit-content;
+    height: 45px;
+    color: var(--WhiteF);
+    background-color: rgba(0, 48, 73, 0.6);
+    border-radius: 10px;
+    border: 2.5px solid var(--WhiteF);
+    font-family: 'Inria-M';
+    font-size: 19px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.4s ease;
+}
+
+.domain-button:hover {
+    scale: 1.04;
+}
+
+#create-account {
+    width: 190px;
+    height: 40px;
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    transition: 0.4s ease;
+}
+
+#create-account:hover {
+    scale: 1.05;
+}
+
+#create-account {
+    background-color: var(--AccentBlue);
+    color: var(--WhiteF);
+    font-family: 'Inria-M';
+    font-size: 20px;
+    margin-top: 17px;
+}
+
+/* right-part */
+.right-part {
+    background: linear-gradient(rgba(0, 48, 73, 0.55), rgba(0, 48, 73, 0.55)),
+                url('../../Assets/Images/SignUpBG.jpg') no-repeat center center / cover;
+    height: 100vh;
+    width: 50vw;
+}
