@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Inria Sans", sans-serif;
+}
+.header {
+  width: 71.25rem;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 0 20px;
+}
+
+header .header-links {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 15px;
+  margin-right: -20px;
+}
+
+header a {
+  color: var(--AccentBlue);
+  font-family: 'Inria-L';
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.logo {
+  height: 2.5rem;
+  width: 11.438rem;
+  margin-left: 10px;
+}
+.header-link {
+  height: 1.5rem;
+  width: 15.874rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  color: #003049;
+  text-decoration: none;
+}
+.header-home-img {
+  height: 2.041rem;
+  width: 1.875rem;
+}
+.line {
+  position: relative;
+  width: 1150px;
+  height: 2px;
+  left: 27px;
+  background-color: #003049;
+  margin-bottom: 20px;
+}
+/* profile-section */
+.profile-box {
+  position: relative;
+  background-color: #003049;
+  width: 1150px;
+  height: 599px;
+  margin-top: 40px;
+  left: 28px;
+}
+.profile {
+  position: relative;
+  top: 35px;
+  left: 64px;
+}
+.profile .image {
+  margin-bottom: 10px;
+}
+.profile .email {
+  width: 156px;
+  height: 22px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.58px;
+  color: white;
+  margin-left: 15px;
+}
+.profile .github {
+  width: 30px;
+  height: 28px;
+  margin-top: 5px;
+  margin-left: 35px;
+}
+.profile .linkedin {
+  width: 30px;
+  height: 28px;
+}
+.name {
+  position: absolute;
+  height: 71px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 71.94px;
+  color: white;
+  left: 400px;
+  bottom: 450px;
+}
+.vert-line {
+  position: relative;
+  width: 6px;
+  height: 200px;
+  background-color: white;
+  margin-left: 400px;
+  bottom: 60px;
+}
+.info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 430px;
+  bottom: 259px;
+}
+.a {
+  height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35.97px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.b {
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 29.98px;
+  height: 30px;
+}
+/* button */
+.c {
+  font-family: "Inria Sans", sans-serif;
+  width: 208px;
+  height: 58px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 40px;
+  border: #003049;
+  line-height: 35.97px;
+  background-color: #7fbad9;
+  color: white;
+}
+.buttons {
+  position: relative;
+  left: 380px;
+  bottom: 240px;
+}
