@@ -1,0 +1,443 @@
+@font-face {
+    font-family: 'Inria-L';
+    src: url(Assets/Inria_Sans/InriaSans-Light.ttf);
+}
+@font-face {
+    font-family: 'Inria-M';
+    src: url(Assets/Inria_Sans/InriaSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inria-B';
+    src: url(Assets/Inria_Sans/InriaSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(Assets/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+/* global */
+
+:root {
+    --WhiteF: #fff;
+    --AccentBlue: #003049;
+    --fullWidth: 
+}
+
+* {
+    font-family: 'Inria-M';
+    background-color: var(--WhiteF);
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-snap-type: y mandatory;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+/* common ones */
+
+.bar {
+    width: calc(100vw - 2.5rem);
+    height: 0.1875rem;
+    background-color: var(--AccentBlue);
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+#sign-up, #login, #learn-more {
+    width: 7.5rem;
+    height: 1.875rem;
+    font-family: 'Inria-M';
+    border-radius: 0;
+    padding: 0;
+    transition: 0.4s ease;
+}
+
+button:hover, #svg-learn-more {
+    cursor: pointer;
+}
+
+.buttons-pair {
+    display: flex;
+    align-items: center;
+}
+
+#sign-up {
+    background-color: var(--WhiteF);
+    color: var(--AccentBlue);
+    border: 0.125rem solid var(--AccentBlue);
+    font-family: 'Inria-M';
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 1.25rem;
+}
+
+#learn-more, #login {
+    background-color: var(--AccentBlue);
+    color: var(--WhiteF);
+    font-family: 'Inria-M';
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+}
+
+/* header */
+header {
+    width: calc(100vw - 3.375rem);
+    padding-left: 1.6875rem;
+    padding-right: 1.6875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5625rem;
+    scroll-snap-align: start;
+}
+
+header #logo {
+    height: 1.875rem;
+}
+
+header .header-links {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: -1.25rem;
+    column-gap: 1.25rem;
+}
+
+header a {
+    color: var(--AccentBlue);
+    font-family: 'Inria-L';
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* main */
+
+.hero-section {
+    width: calc(100vw - 3.375rem);
+    padding-left: 1.6875rem;
+    padding-right: 1.6875rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.875rem;
+    margin-left: 3.125rem;
+}
+
+.hero-section .left-hero-section h1 {
+    width: 35rem;
+    color: var(--AccentBlue);
+    font-family: 'Inter';
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.hero-section .left-hero-section p {
+    width: 31.25rem;
+    color: var(--AccentBlue);
+    font-family: "Inria-L";
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+main img { 
+    height: 22.5rem;
+    margin-left: -0.625rem;
+}
+
+/* section-1 */
+.section-1 {
+    background: linear-gradient(0deg, rgba(0, 48, 73, 0.7) 0%, rgba(0, 48, 73, 0.7) 100%),
+                url(Assets/Images/LandingPage1.png) lightgray 50% / cover no-repeat;
+    width: calc(100vw - 3.375rem);
+    height: 28.75rem;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1.6875rem;
+    padding-right: 1.6875rem;
+    margin-top: 4.375rem;
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.section-1 * {
+    background-color: transparent;
+}
+
+.section-1 h1 {
+    color: var(--WhiteF);
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 2.8125rem;
+    font-weight: 600;
+}
+
+.section-1 #section-1-title {
+    width: 41.5rem;
+}
+
+.section-1 p {
+    color: var(--WhiteF);
+    text-align: center;
+    font-family: "Inria-L";
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.section-1 #desc-section-1 {
+    width: 53.125rem;
+    margin-top: -2.5rem;
+}
+
+.section-1 #fifty-fifty-p {
+    width: 17.125rem;
+    margin-top: 0.625rem;
+}
+
+.section-1 img {
+    height: 5rem;
+}
+
+.section-1 .fifty-fifty-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50.4375rem;
+}
+
+.fifty-fifty-div div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+/* animations */
+.hidden {
+    opacity: 0;
+    filter: blur(1px);
+    transform: translateY(125%);
+    transition: 0.7s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* section-2 & section-3 */
+
+.section-2, .section-3 {
+    display: grid;
+    place-items: center;
+    margin-top: 7.5rem;
+    margin-bottom: 3.125rem;
+    scroll-snap-align: center;
+}
+
+.section-2 h1, .section-3 h1 {
+    width: 50rem;
+    color: var(--AccentBlue);
+    text-align: center;
+    font-family: "Inria-B";
+    font-size: 2.8125rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+}
+
+.section-3 h1 {
+    width: 55rem;
+    margin-bottom: 7.5rem;
+}
+
+.section-2 #head-p, .section-3 #head-p {
+    width: 39.375rem;
+    color: var(--AccentBlue);
+    text-align: center;
+    font-family: "Inria-L";
+    font-size: 0.9375rem;
+    font-weight: 300;
+    margin-bottom: 4.375rem;
+}
+
+.section-2 .cards-array, .section-3 .cards-array {
+    width: 90vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.cards-array img {
+    height: 5rem;
+    width: auto;
+    margin-bottom: 2.5rem;
+}
+
+.cards-array div {
+    display: grid;
+    place-items: center;
+}
+
+.section-2 h2, .section-3 h2 {
+    width: 18.75rem;
+    color: var(--AccentBlue);
+    font-family: 'Inter';
+    color: var(--AccentBlue);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.9375rem;
+}
+
+.section-2 #card-p, .section-3 #card-p {
+    width: 17.6875rem;
+    color: var(--AccentBlue);
+    font-family: 'Inria-L';
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.section-3 .cards-array .card-2 img {
+    height: 3.125rem;
+    width: auto;
+    margin-top: 0.9375rem;
+    margin-bottom: 3.125rem;
+}
+
+/* section-4 */
+
+.section-4 {
+    display: grid;
+    place-items: center;
+    margin-top: 4.375rem;
+    margin-bottom: 6.25rem;
+    scroll-snap-align: center;
+}
+
+.section-4 h1 {
+    color: var(--AccentBlue);
+    font-family: Inter;
+    font-size: 2.8125rem;
+    font-weight: 600;
+    margin-bottom: 6.25rem;
+}
+
+.section-4 .pfp {
+    height: 12.5rem;
+    width: 12.5rem;
+    border-radius: 6.25rem;
+    margin-bottom: 1.25rem;
+    background: linear-gradient(0deg, rgba(0, 48, 73, 0.70) 0%, rgba(0, 48, 73, 0.70) 100%), url(Assets/Images/profile-picture.png) lightgray 50% / cover no-repeat;
+}
+
+.section-4 .profile-array {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-4 .profile-array div {
+    display: grid;
+    place-items: center;
+}
+
+.section-4 h2 {
+    width: 8.75rem;
+    color: var(--AccentBlue);
+    text-align: center;
+    font-family: "Inria-B";
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.625rem;
+}
+
+.section-4 p {
+    width: 11.875rem;
+    color: var(--AccentBlue);
+    text-align: center;
+    font-family: "Inria-L";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* section-5 */
+.section-5 {
+    background: linear-gradient(0deg, rgba(0, 48, 73, 0.7) 0%, rgba(0, 48, 73, 0.7) 100%),
+    url(Assets/Images/LandingPage2.jpg) lightgray 50% / cover no-repeat;
+    width: 100vw;
+    height: 25rem;
+    padding-top: 4.375rem;
+    padding-left: 4.375rem;
+    margin-top: 4.375rem;
+    overflow: hidden;
+    scroll-snap-align: center;
+}
+
+.section-5 * {
+    background-color: transparent;
+}
+
+.section-5 h1 {
+    width: 55rem;
+    color: var(--WhiteF);
+    font-family: "Inria-B";
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3.125rem;
+}
+
+.section-5 p {
+    width: 58.75rem;
+    color: var(--WhiteF);
+    font-family: "Inria-L";
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 3.125rem;
+}
+
+.section-5 #sign-up {
+    background-color: transparent;
+    border: 0.125rem solid var(--WhiteF);
+    color: var(--WhiteF);
+}
+
+/* footer */
+footer {
+    width: calc(100vw - 3.75rem);
+    height: 29.375rem;
+    border: 0.625rem solid var(--AccentBlue);
+    background: var(--WhiteF);
+    margin-top: 8.125rem;
+    margin-bottom: 1.875rem;
+    margin-left: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+}
+
+footer h1 {
+    color: var(--AccentBlue);
+    font-family: "Inria-B";
+    font-size: 3.75rem;
+    font-weight: 700;
+}

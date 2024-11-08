@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script defer src="home.js"></script>
+    <title>DevConnect</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="Assets/Icons/DevConnect Logo.png" alt="">
+        <div class="header-links">
+            <a href="./LearnMore-Page/index.html">About us</a>
+            <a href="./My-Projects-Pages/index.html">My Projects</a>
+        </div>
+        <img id="profile" src="Assets/Icons/profileIcon.png" alt="">
+    </header>
+    <main>
+        <div class="bar"></div>
+        <div class="hero-section">
+            <div class="left-hero-section">
+                <h1>
+                    Connecting Developers Building Innovations...
+                </h1>
+                <p>
+                    Join our community to collaborate on cutting-edge technology
+                </p>
+                <button id="add-project-btn">Add Project</button>
+            </div>
+            <div class="right-hero-section">
+                <img src="Assets/Images/GIF1.gif" alt="">
+            </div>
+        </div>
+
+        <!-- section-1 -->
+        <div class="section-1">
+            <div class="left-section-1">
+                <div class="section-1-head bar-h1-pair hidden">
+                    <div class="vertical-white-bar hidden"></div>
+                    <h1 id="section-1-title" class="hidden">
+                        New Here? Explore some Projects...
+                    </h1>
+                </div>
+                <p id="desc-section-1" class="hidden">
+                    Discover and join innovative projects that match your skills and interests. Dive into exciting opportunities to collaborate and make a meaningful impact with like-minded individuals!
+                </p>
+            </div>
+        </div>
+
+        <div class="section-2">
+            <div class="section-2-head bar-h1-pair">
+                <div class="vertical-blue-bar"></div>
+                <h1 id="section-1-title">
+                    Select a Domain you are interested in...
+                </h1>
+            </div>
+            <div class="buttons-container">
+                <!-- web development button -->
+                <button id="web-development-btn" class="white-button">
+                    <div class="left-button">
+                        <img src="Assets/Icons/internet-globe.png" alt="">
+                    </div>
+                    <div class="right-button">
+                        <h3>Web Development</h3>
+                        <p>Build interactive websites using frontend and backend technologies.</p>
+                    </div>
+                </button>
+                <!-- android development button -->
+                <button id="android-development-btn" class="blue-button">
+                    <div class="left-button">
+                        <img src="Assets/Icons/android-bot.png" alt="">
+                    </div>
+                    <div class="right-button">
+                        <h3>Android Development</h3>
+                        <p>Develop mobile applications for Android using Java for a wide range of devices.</p>
+                    </div>
+                </button>
+                <!-- ios development button -->
+                <button id="ios-development-btn" class="white-button">
+                    <div class="left-button">
+                        <img src="Assets/Icons/apple.png" alt="">
+                    </div>
+                    <div class="right-button">
+                        <h3>iOS Development</h3>
+                        <p>Create seamless iOS apps with Swift, designed for iPhones and iPads.</p>
+                    </div>
+                </button>
+                <!-- game development button -->
+                <button id="game-development-btn" class="blue-button">
+                    <div class="left-button">
+                        <img src="Assets/Icons/game-controller.png" alt="">
+                    </div>
+                    <div class="right-button">
+                        <h3>Game Development</h3>
+                        <p>Design and build engaging games with Unity or Unreal Engine.</p>
+                    </div>
+                </button>
+                <!-- ai button -->
+                <button id="ai-btn" class="white-button">
+                    <div class="left-button">
+                        <img src="Assets/Icons/ai-stars.png" alt="">
+                    </div>
+                    <div class="right-button">
+                        <h3>Artificial Intelligence</h3>
+                        <p>Implement intelligent systems using machine learning.</p>
+                    </div>
+                </button>
+                <!-- cloud computing button -->
+                <button id="cloud-computing-btn" class="blue-button">
+                    <div class="left-button">
+                        <img src="Assets/Icons/cloud.png" alt="">
+                    </div>
+                    <div class="right-button">
+                        <h3>Cloud Computing</h3>
+                        <p>Leverage cloud platforms for scalable, efficient, and secure computing solutions.</p>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- section-5 -->
+        <div class="section-5">
+            <div class="section-5-left">
+                <div class="section-5-head bar-h1-pair">
+                    <div class="vertical-white-bar"></div>
+                    <h1 id="section-1-title">
+                        How does it work?...
+                    </h1>
+                </div>
+                <p>
+                    Project owners share their ideas and requirements on DevConnect. Interested developers, known as seekers, can explore these projects and send collaboration requests. If the owner accepts, both parties collaborate, combining their skills to successfully build the project together.
+                </p>
+            </div>
+            <div class="section-5-right">
+                <div class="step-one step-one-hide">
+                    <img src="Assets/Svg files/step-one.svg" alt="">
+                </div>
+                <div class="step-two step-two-hide">
+                    <img src="Assets/Svg files/step-two.svg" alt="">
+                </div>
+                <div class="step-three step-three-hide">
+                    <img src="Assets/Svg files/step-three.svg" alt="">
+                </div>
+                <div class="step-four step-four-hide">
+                    <img src="Assets/Svg files/step-four.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <footer>
+        <div class="flexbox">
+            <img src="../Assets/Images/Group 221.png" alt="">
+            <div class="DevConnet">
+                <h2>DevConnect</h2>
+                <a href="./home.html">Home</a>
+                <a href="./Project-Pages/add-project.html">Add Project</a>
+            </div>
+            <div class="Domains">
+                <h2>Domains</h2>
+                <a href="./Domain-Pages/web-development.html">Web Development</a>
+                <a href="./Domain-Pages/android-development.html">Android Development</a>
+                <a href="./Domain-Pages/ios-development.html">iOS Development</a>
+                <a href="./Domain-Pages/game-development.html">Game Development</a>
+                <a href="./Domain-Pages/ai-development.html">Artificial Intelligence</a>
+                <a href="./Domain-Pages/cloud-computing.html">Cloud Computing</a>
+            </div>
+        </div>
+        <div class="small-bar"></div>
+    </footer>
+</body>
+</html>
